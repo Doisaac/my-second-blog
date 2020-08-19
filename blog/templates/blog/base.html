@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+    <html lang="es">
+    <head> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Douglas shop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&family=Montserrat:wght@100&family=Noto+Sans+SC:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+        <!-- fontsend -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- boots -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- css -->
+        <link rel="stylesheet" href="{% static 'blog/css/style.css' %}"> 
+        <!-- links -->
+        <script src="{% static 'blog/js/smooth-scroll.polyfills.min.js'%}"></script>
+           
+        
+    </head>
+    <body>
+         <header>
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+            <a class="d-lg-none" href="#navbar" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup">
+                <img src="{% static  'blog/img/menu.png'%}" class="barra">
+              </a>
+                
+              <strong class="logo navbar-brand">LOGO</strong>
+            
+                  <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+                      
+                    <div class="navbar-nav m-auto" id="navbar-nav">
+                    <a  data-scroll href="#inicio"class="nav-item nav-link">Inicio |</a>
+                    <a  data-scroll href="#sobre" class="nav-item nav-link"> Sobre nosotros |</a>
+                    <a data-scroll href="#calidad" class="nav-item nav-link">Calidad </a>
+                    
+                    
+                    </div>
+                    <div class="icons">
+                        <i class="fab fa-facebook-f ml-2"></i>
+                        <i class="fab fa-twitter ml-2"></i>
+                    </div>
+                 </div> 
+            </nav>
+        </header> 
+
+        
+        <section id="inicio" class="main">        
+            <strong class="main-text text-center"> Tienda <br>La casa de Papel </strong>   
+        </section>
+
+        <!-- conte start -->
+        <section class="primera" id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 conte conte-1" >
+                        <img src="{% static  'blog/img/tienda.jpg'%}" class="imagen-conte-1" data-aos="zoom-out-right" data-aos-duration="3000">
+                    </div>
+
+                        <div class="col-md-6 col-sm-12 conte conte-2" >
+                            <div class="explicacion-conte-1"  data-aos="zoom-out-left" data-aos-duration="3000">
+                                <h1>¿ Quienes Somos ?</h1>
+                                <p class="limitar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt vel animi repudiandae non impedit magnam, debitis libero praesentium, aut amet veritatis. Commodi illo corrupti cupiditate velit temporibus, sunt perferendis quam, qui aut, sequi quidem quisquam deleniti ullam similique alias?</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+                
+        <!-- calidad -->
+
+        {% block contenido %}
+        {% endblock %}
+
+        
+        
+          <!-- footer -->
+            <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 0, 0);"></path></svg></div>
+            <section class="footer">
+                <div class="container mb-0">
+                    <div class="footer-content text-center">
+                        <p class="lead "> Douglas Barrera | 2020</p>
+                    </div>
+
+
+                </div>
+               
+            </section>
+
+            
+
+      
+
+
+       
+
+
+
+
+
+
+
+
+       
+        <!-- jquery -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
+        <script src="{% static 'blog/js/java.js'%}"></script> 
+    </body>
+</html>

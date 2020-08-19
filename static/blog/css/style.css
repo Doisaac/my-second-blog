@@ -1,0 +1,313 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+     font-family: 'Jost', sans-serif; 
+     overflow-x: hidden;
+     position: relative;
+     
+    
+}
+
+
+a {
+    cursor: pointer;
+}
+.barra{
+    max-height: 35px;
+   
+    
+}
+.icons ,  i{
+    color :white;
+    cursor: pointer;
+        
+}
+i {
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+i:hover {
+    
+    background-color: blue;
+    transition: ease 0.4s ;
+} 
+.logo {
+    padding: 0px 0px;
+    cursor: pointer;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: transparent;
+    
+}
+
+.main {
+    height: 100vh;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e509d, #bdc3c7b2) , url(/static/blog/img/casa.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-text {
+
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    color: white ;
+
+}
+
+.navbar.top-nav-collapse {
+    background-color: black;
+    transition: all 300ms ease-in-out;
+   
+}
+
+/* espacios */
+section {
+    margin-bottom: 80px;;
+    box-sizing: inherit;
+    
+}
+
+.col {
+    padding-top: 100px;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+/* termina */
+
+.imagen-conte-1 {
+    max-width: 300px;
+
+    
+
+   
+}
+
+
+
+.conte-1 {
+
+    text-align: center;
+   
+    
+}
+
+.conte-2 {
+    text-align: center;
+}
+
+.conte {
+    margin-bottom: 50px;
+}
+
+
+
+.cols {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.calidad {
+    font-size: 50px;
+    color: white;
+    position: relative;
+    top: 30px;
+    
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+   
+}
+
+
+.card-body {
+
+        position:absolute;
+        bottom: 0 ;
+        z-index: -1;
+        transition: ease-in-out 0.5s ;
+}
+
+
+.card-body.down{
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    bottom: 0 ;
+    transition: ease-in 0.8s ;
+    
+    
+}
+
+.card-body {
+    
+    text-align: center;
+    width: 100%;
+   
+}
+
+.fas{
+    
+    position: absolute;
+    color: black;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    
+}
+  
+.footer{
+    height: 50px;
+    background-color: black;
+    padding: 0 0 ;
+    margin: 0;
+}
+
+.caru {
+    width: 400px;
+    object-fit: cover;
+   
+
+}
+.carousel-item {
+    display: flex !important;
+    
+}
+
+.te {
+    padding: 0;
+    margin-left: 100px;
+    margin-top: 100px;
+    max-width: 50%;
+    text-align: justify;
+
+}
+.cartas {
+    margin-bottom: 0;
+}
+.support {
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f465, #373b4486), url(/static/blog/img/support.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: scroll;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin-bottom: 0;
+    
+    
+    
+}
+
+.contenido-support {
+    color: white;
+    font-weight: 10rem;
+    font-size: 2rem;
+    position: relative;
+    top: 250px;
+    
+}
+.ayudame {
+    padding: 10px 10px ;
+    background-color: rgba(0, 0,0, .1);
+    border-radius: 10px;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.ubi {
+    
+    margin: 50px 0;
+    font-size: 25px;
+    padding: 8px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    color: white;
+}
+.mapa {
+    background-color: #1A3C7F;
+    box-shadow: 0 1px 10px 0 rgba(11,11,11,.8) inset;
+    padding-bottom: 20px;
+}
+
+.mapa-ubi{
+    border: 5px solid black;
+}
+@media (min-width: 992px) { 
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .main-text {
+
+    
+        font-size: 60px;
+        color: white ;
+    
+    }
+
+    .conte-1{
+       text-align: start;
+    }
+
+    .conte-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .limitar {
+        
+        text-align: justify;
+
+    }
+    .support {
+        
+        height: 100vh;
+        background-size: cover;
+        padding: 0;
+        
+    }
+
+    
+ }
+
