@@ -9,6 +9,7 @@ body {
      font-family: 'Jost', sans-serif; 
      overflow-x: hidden;
      position: relative;
+     overflow-x: hidden;
      
     
 }
@@ -48,7 +49,7 @@ i:hover {
     display: flex;
     flex-direction: row-reverse;
     background-color: transparent;
-    
+    max-width: 100%;
 }
 
 .main {
@@ -267,6 +268,8 @@ section {
 
 .mapa-ubi{
     border: 5px solid black;
+    max-width: 300px;
+    height: 300px;
 }
 @media (min-width: 992px) { 
     .navbar{
@@ -307,6 +310,8 @@ section {
         padding: 0;
         
     }
+
+    
 
     
  }
